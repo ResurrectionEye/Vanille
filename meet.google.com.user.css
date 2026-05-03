@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name Example
-@namespace Example.com
-@version 1.0.0
-@description someUserStyle
-@author Me
+@name Meet, The Lightstyle
+@namespace meet.google.com
+@version 1.0.1
+@description Lightstyle for Google Meet.
+@author rEye
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://meet.google.com/") {
