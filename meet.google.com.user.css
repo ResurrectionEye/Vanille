@@ -1,0 +1,125 @@
+/* ==UserStyle==
+@name Example
+@namespace Example.com
+@version 1.0.0
+@description someUserStyle
+@author Me
+==/UserStyle== */
+
+@-moz-document url-prefix("https://meet.google.com/") {
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(222.2 0% 4.9%);
+  --faded: hsl(222.2 0% 24.9%);
+  --layer: hsl(0 0% 96%);
+  --border: hsl(222.2 0% 84.9%);
+  --alert: hsl(5 90% 51%);
+  --alertian: hsl(5, 90%, 91%);
+  --alertish: hsl(5, 90%, 41%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    
+    --background: hsl(222.2 0% 4.9%);
+    --foreground: hsl(210 40% 98%);
+    --faded: hsl(210 40% 78%);
+    --layer: hsl(222.2 0% 14.9%);
+    --border: hsl(222.2 0% 24.9%);
+    --alert: hsl(5 90% 41%);
+    --alertian: hsl(5, 100%, 33%);
+    --alertish: hsl(5, 100%, 23%);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --hotlane-on-background-color: var(--foreground);
+  }
+  c-wiz {
+    background: var(--background) !important;
+  }
+  .Sdwpn.P9KVBf {
+    color: var(--foreground);
+  }
+  .vLQezd {
+    --gm3-icon-button-filled-container-color: var(--alert);
+  }
+
+  .P9KVBf .aLTxue,
+  .P9KVBf .yB7uSc,
+  .VYBDae-Bz112c-LgbsSe-OWXEXe-ornU0b {
+    transition: filter 0.33s;
+    --gm3-icon-button-filled-container-color: var(--layer);
+    background: var(--layer);
+  }
+
+  .P9KVBf .aLTxue:hover,
+  .P9KVBf .yB7uSc:hover,
+  .VYBDae-Bz112c-LgbsSe-OWXEXe-ornU0b:hover {
+    filter: brightness(90%);
+  }
+
+  .P9KVBf {
+    --gm3-sys-color-secondary-container: var(--border);
+    --gm3-sys-color-surface: var(--background);
+    --gm3-sys-color-background: var(--background);
+    --gm3-sys-color-surface-container: var(--layer);
+    --gm3-sys-color-surface-container-high: var(--layer);
+    --gm3-sys-color-on-surface-variant: var(--faded);
+    --hotlane-on-background-color: var(--foreground);
+    --hotlane-on-surface-variant-color: var(--faded);
+    --gm3-sys-color-on-surface: var(--foreground);
+    --gm3-sys-color-outline-variant: var(--border);
+    --gm3-sys-color-surface-variant: var(--layer);
+    --gm3-sys-color-surface-container-low: var(--layer);
+    --gm3-sys-color-inverse-on-surface: var(--background);
+    --gm3-sys-color-primary: unset;
+    --gm3-sys-color-surface-container-highest: var(--layer);
+  }
+
+  /* Un-nested these sections below */
+  .MON6Vd {
+    background: var(--layer);
+  }
+  .MON6Vd .uoYsj {
+    color: var(--foreground);
+  }
+
+  .fdZ55,
+  .ns17te {
+    --meet-badge-expanded-icon-background-color: var(--layer) !important;
+    --meet-badge-expanded-background-color: var(--layer) !important;
+  }
+
+  .P9KVBf .Y3DJRd {
+    --gm3-icon-button-filled-container-color: var(--alertian);
+  }
+  .P9KVBf .wXNcS {
+    --gm3-sys-color-on-error: var(--alertish);
+  }
+
+  .PJU52b {
+    --gm3-tooltip-plain-container-color: var(--layer);
+    --gm3-tooltip-plain-supporting-text-color: var(--foreground);
+  }
+
+  .G70CKc {
+    background: var(--layer);
+  }
+  .G70CKc * {
+    color: var(--foreground);
+  }
+
+  .R3Gmyc {
+    border-style: none;
+    background-color: transparent;
+  }
+  .EDp2nc {
+    background: var(--layer);
+  }
+  .P9KVBf :where(.nMcdL) {
+    color: var(--faded);
+  }
+}
+}
